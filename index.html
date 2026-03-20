@@ -1,69 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luminverse 🌌</title>
-
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #E6E6FA, #D8BFD8, #C3B1E1);
-      color: #4B0082;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #f3edff 0%, #e4d7ff 45%, #d5c2ff 100%);
+      color: #4a2c75;
+      min-height: 100vh;
+    }
+
+    .hero {
       text-align: center;
+      padding: 100px 20px 70px;
     }
 
-    .container {
-      margin-top: 120px;
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 16px;
+      text-shadow: 0 0 18px rgba(120, 82, 190, 0.25);
     }
 
-    h1 {
-      font-size: 55px;
-      margin-bottom: 10px;
-      text-shadow: 0 0 10px rgba(93, 63, 211, 0.5);
-    }
-
-    p {
+    .hero p {
       font-size: 20px;
-      margin-bottom: 30px;
+      max-width: 650px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .btn-group {
+      margin-top: 20px;
     }
 
     .btn {
       display: inline-block;
-      padding: 12px 25px;
-      margin: 10px;
-      border-radius: 25px;
-      background-color: #9370DB;
-      color: white;
       text-decoration: none;
+      background: #8e6ad8;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 999px;
+      margin: 8px;
       font-size: 16px;
-      transition: 0.3s;
+      transition: 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #7B68EE;
-      transform: scale(1.05);
+      transform: translateY(-3px);
+      background: #7a57c7;
+    }
+
+    .section {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 30px 20px 70px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(91, 54, 146, 0.08);
+      backdrop-filter: blur(6px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .about-box {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 24px;
+      padding: 30px;
+      margin-top: 24px;
+      line-height: 1.8;
+      box-shadow: 0 10px 30px rgba(91, 54, 146, 0.08);
     }
 
     .footer {
-      margin-top: 150px;
+      text-align: center;
+      padding: 25px 20px 35px;
       font-size: 14px;
-      opacity: 0.7;
+      color: #5f458b;
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <h1>Welcome to Luminverse 🌌</h1>
-    <p>Your space of calm, creativity, and glow ✨</p>
 
-    <a href="https://www.youtube.com/@Bangtasticpurpleocean" class="btn">YouTube 🎥</a>
-    <a href="https://www.instagram.com/btsaryana/" class="btn">Instagram 💜</a>
-  </div>
+  <section class="hero">
+    <h1>Luminverse 🌌</h1>
+    <p>
+      A soft little universe of creativity, calm, and glow.
+      Welcome to my space on the internet.
+    </p>
+
+    <div class="btn-group">
+      <a href="https://www.youtube.com/@Bangtasticpurpleocean" target="_blank" class="btn">YouTube 🎥</a>
+      <a href="https://www.instagram.com/btsaryana/" target="_blank" class="btn">Instagram 💜</a>
+      <a href="#about" class="btn">About Me ✨</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Inside Luminverse</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Creative Space</h3>
+        <p>
+          A corner for ideas, edits, aesthetics, and everything I want to build.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cozy Energy</h3>
+        <p>
+          Soft vibes, calm colors, and a place that feels peaceful and personal.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Growing Journey</h3>
+        <p>
+          This is only the beginning. Luminverse will keep evolving with me.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <div class="about-box">
+      Hi, welcome to Luminverse 💜
+      <br><br>
+      This is my little universe on the internet — a place where creativity,
+      calm, and ambition come together. I love building aesthetic things,
+      exploring new ideas, and turning simple beginnings into something beautiful.
+      <br><br>
+      Thanks for visiting my space ✨
+    </div>
+  </section>
 
   <div class="footer">
-    Made with 💜 by Luminverse
+    © 2026 Luminverse. All rights reserved.
   </div>
+
 </body>
 </html>
